@@ -614,6 +614,33 @@
                 padding: 10px 20px;
             }
         }
+        
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .animate-on-scroll {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        
+        .animate {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .pulse {
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
     </style>
 </head>
 <body>
@@ -644,13 +671,13 @@
         <div class="circle circle-2"></div>
         <div class="container">
             <div class="hero-content">
-                <div class="hero-text">
+                <div class="hero-text animate-on-scroll">
                     <h1>Elevate Your Digital Fashion Experience</h1>
                     <p>Discover exclusive digital fashion assets, templates, and resources designed for modern women. Transform your style with our premium digital collections.</p>
-                    <a href="#" class="btn">Explore Collections</a>
+                    <a href="#" class="btn pulse">Explore Collections</a>
                     <a href="#" class="btn btn-outline">View Trends</a>
                 </div>
-                <div class="hero-image">
+                <div class="hero-image animate-on-scroll">
                     <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Fashion Digital Products">
                 </div>
             </div>
@@ -660,12 +687,12 @@
     <!-- Products Section -->
     <section class="products">
         <div class="container">
-            <div class="section-title">
+            <div class="section-title animate-on-scroll">
                 <h2>Our Digital Products</h2>
                 <p>Premium digital fashion resources for creators and enthusiasts</p>
             </div>
             <div class="products-grid">
-                <div class="product-card">
+                <div class="product-card animate-on-scroll">
                     <div class="product-image">
                         <img src="https://images.unsplash.com/photo-1617137968427-85924c800a22?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Fashion Templates">
                     </div>
@@ -687,7 +714,7 @@
                     </div>
                 </div>
                 
-                <div class="product-card">
+                <div class="product-card animate-on-scroll">
                     <div class="product-image">
                         <img src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Digital Assets">
                     </div>
@@ -709,7 +736,7 @@
                     </div>
                 </div>
                 
-                <div class="product-card">
+                <div class="product-card animate-on-scroll">
                     <div class="product-image">
                         <img src="https://images.unsplash.com/photo-1576566588028-4147f3842f27?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Style Guide">
                     </div>
@@ -737,12 +764,12 @@
     <!-- Features Section -->
     <section class="features">
         <div class="container">
-            <div class="section-title">
+            <div class="section-title animate-on-scroll">
                 <h2>Why Choose Us</h2>
                 <p>Premium benefits for our international customers</p>
             </div>
             <div class="features-container">
-                <div class="feature-box">
+                <div class="feature-box animate-on-scroll">
                     <div class="feature-icon">
                         <i class="fas fa-globe"></i>
                     </div>
@@ -750,7 +777,7 @@
                     <p>Instant digital delivery worldwide. Access your purchases immediately after payment.</p>
                 </div>
                 
-                <div class="feature-box">
+                <div class="feature-box animate-on-scroll">
                     <div class="feature-icon">
                         <i class="fas fa-file-download"></i>
                     </div>
@@ -758,7 +785,7 @@
                     <p>Download your digital products as many times as you need, forever.</p>
                 </div>
                 
-                <div class="feature-box">
+                <div class="feature-box animate-on-scroll">
                     <div class="feature-icon">
                         <i class="fas fa-sync-alt"></i>
                     </div>
@@ -766,7 +793,7 @@
                     <p>Products are regularly updated with new content and improvements.</p>
                 </div>
                 
-                <div class="feature-box">
+                <div class="feature-box animate-on-scroll">
                     <div class="feature-icon">
                         <i class="fas fa-headset"></i>
                     </div>
@@ -780,27 +807,27 @@
     <!-- Payment Methods -->
     <section class="payment">
         <div class="container">
-            <div class="section-title">
+            <div class="section-title animate-on-scroll">
                 <h2>Secure Payment Methods</h2>
                 <p>We accept all major international payment options</p>
             </div>
             <div class="payment-methods">
-                <div class="payment-method">
+                <div class="payment-method animate-on-scroll">
                     <i class="fab fa-cc-visa fa-3x"></i>
                 </div>
-                <div class="payment-method">
+                <div class="payment-method animate-on-scroll">
                     <i class="fab fa-cc-mastercard fa-3x"></i>
                 </div>
-                <div class="payment-method">
+                <div class="payment-method animate-on-scroll">
                     <i class="fab fa-cc-amex fa-3x"></i>
                 </div>
-                <div class="payment-method">
+                <div class="payment-method animate-on-scroll">
                     <i class="fab fa-cc-paypal fa-3x"></i>
                 </div>
-                <div class="payment-method">
+                <div class="payment-method animate-on-scroll">
                     <i class="fab fa-apple-pay fa-3x"></i>
                 </div>
-                <div class="payment-method">
+                <div class="payment-method animate-on-scroll">
                     <i class="fab fa-google-pay fa-3x"></i>
                 </div>
             </div>
@@ -810,12 +837,12 @@
     <!-- Testimonials -->
     <section class="testimonials">
         <div class="container">
-            <div class="section-title">
+            <div class="section-title animate-on-scroll">
                 <h2>Customer Reviews</h2>
                 <p>What our international customers say</p>
             </div>
             <div class="testimonial-container">
-                <div class="testimonial">
+                <div class="testimonial animate-on-scroll">
                     <div class="testimonial-content">
                         "The fashion templates have completely transformed my Instagram presence. As a content creator, these have saved me countless hours of design work!"
                     </div>
@@ -830,7 +857,7 @@
                     </div>
                 </div>
                 
-                <div class="testimonial">
+                <div class="testimonial animate-on-scroll">
                     <div class="testimonial-content">
                         "I run a small boutique and the digital assets bundle has been invaluable for creating marketing materials. The quality is exceptional!"
                     </div>
@@ -851,8 +878,8 @@
     <!-- CTA Section -->
     <section class="cta">
         <div class="container">
-            <h2>Join Our Fashion Community</h2>
-            <p>Subscribe to get exclusive digital fashion resources, trend reports, and special discounts delivered to your inbox.</p>
+            <h2 class="animate-on-scroll">Join Our Fashion Community</h2>
+            <p class="animate-on-scroll">Subscribe to get exclusive digital fashion resources, trend reports, and special discounts delivered to your inbox.</p>
             <form style="max-width: 500px; margin: 0 auto;">
                 <div style="display: flex; margin-top: 30px;">
                     <input type="email" placeholder="Your email address" style="flex: 1; padding: 15px 20px; border: none; border-radius: 30px 0 0 30px; font-size: 16px;">
@@ -917,12 +944,8 @@
     </footer>
 
     <script>
-        // Simple script for testimonial slider (conceptual)
+        // Animation on scroll functionality
         document.addEventListener('DOMContentLoaded', function() {
-            // This would control the testimonial slider in a full implementation
-            console.log('Landing page loaded');
-            
-            // Add animation to elements when they come into view
             const observer = new IntersectionObserver((entries) => {
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
@@ -931,9 +954,26 @@
                 });
             }, { threshold: 0.1 });
             
-            // Observe sections
-            document.querySelectorAll('.hero, .products, .features, .payment, .testimonials, .cta').forEach(section => {
-                observer.observe(section);
+            // Observe all elements with animate-on-scroll class
+            document.querySelectorAll('.animate-on-scroll').forEach(element => {
+                observer.observe(element);
+            });
+            
+            // Add animation delay for staggered effects
+            document.querySelectorAll('.feature-box, .product-card, .payment-method').forEach((el, index) => {
+                el.style.transitionDelay = `${index * 0.1}s`;
+            });
+            
+            // Simple cart functionality
+            const cartButtons = document.querySelectorAll('.btn');
+            cartButtons.forEach(button => {
+                if (button.textContent.includes('Add to Cart')) {
+                    button.addEventListener('click', function(e) {
+                        e.preventDefault();
+                        const productName = this.closest('.product-card').querySelector('h3').textContent;
+                        alert(`${productName} added to cart!`);
+                    });
+                }
             });
         });
     </script>
