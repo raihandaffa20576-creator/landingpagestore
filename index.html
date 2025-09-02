@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FemmeStyle Digital | Premium Fashion Digital Products</title>
+    <title>StyleMann Digital | Premium Men's Fashion Digital Products</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -14,11 +14,11 @@
         }
 
         :root {
-            --primary: #ff4d94;
-            --secondary: #6a11cb;
-            --dark: #1a1a2e;
-            --light: #f8f9fa;
-            --accent: #ff6b6b;
+            --primary: #2a6b9c;
+            --secondary: #121212;
+            --accent: #d4af37;
+            --dark: #1a1a1a;
+            --light: #f5f5f5;
             --text: #333;
             --text-light: #777;
             --transition: all 0.3s ease;
@@ -28,12 +28,12 @@
             font-family: 'Montserrat', sans-serif;
             color: var(--text);
             line-height: 1.6;
-            background: linear-gradient(135deg, #f5f7fa 0%, #e4e7f1 100%);
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
             overflow-x: hidden;
         }
 
         h1, h2, h3, h4 {
-            font-family: 'Playfair Display', serif;
+            font-family: 'Raleway', sans-serif;
             font-weight: 700;
             margin-bottom: 1rem;
             color: var(--dark);
@@ -49,10 +49,10 @@
         .btn {
             display: inline-block;
             padding: 12px 28px;
-            background: linear-gradient(45deg, var(--primary), var(--accent));
+            background: linear-gradient(45deg, var(--primary), #3a8ccc);
             color: white;
             border: none;
-            border-radius: 30px;
+            border-radius: 4px;
             font-weight: 600;
             text-transform: uppercase;
             font-size: 14px;
@@ -60,12 +60,13 @@
             cursor: pointer;
             transition: var(--transition);
             text-decoration: none;
-            box-shadow: 0 4px 15px rgba(255, 77, 148, 0.3);
+            box-shadow: 0 4px 15px rgba(42, 107, 156, 0.3);
         }
 
         .btn:hover {
             transform: translateY(-3px);
-            box-shadow: 0 6px 20px rgba(255, 77, 148, 0.4);
+            box-shadow: 0 6px 20px rgba(42, 107, 156, 0.4);
+            background: linear-gradient(45deg, #3a8ccc, var(--primary));
         }
 
         .btn-outline {
@@ -76,13 +77,13 @@
         }
 
         .btn-outline:hover {
-            background: linear-gradient(45deg, var(--primary), var(--accent));
+            background: linear-gradient(45deg, var(--primary), #3a8ccc);
             color: white;
         }
 
         /* Header Styles */
         header {
-            background-color: white;
+            background-color: var(--dark);
             box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
             position: fixed;
             width: 100%;
@@ -98,15 +99,15 @@
         }
 
         .logo {
-            font-family: 'Playfair Display', serif;
+            font-family: 'Raleway', sans-serif;
             font-size: 28px;
             font-weight: 700;
-            color: var(--dark);
+            color: white;
             text-decoration: none;
         }
 
         .logo span {
-            color: var(--primary);
+            color: var(--accent);
         }
 
         .nav-links {
@@ -120,13 +121,16 @@
 
         .nav-links a {
             text-decoration: none;
-            color: var(--text);
+            color: white;
             font-weight: 500;
             transition: var(--transition);
+            text-transform: uppercase;
+            font-size: 14px;
+            letter-spacing: 1px;
         }
 
         .nav-links a:hover {
-            color: var(--primary);
+            color: var(--accent);
         }
 
         .icons {
@@ -139,16 +143,20 @@
             font-size: 20px;
             cursor: pointer;
             transition: var(--transition);
+            color: white;
         }
 
         .icons i:hover {
-            color: var(--primary);
+            color: var(--accent);
         }
 
         /* Hero Section */
         .hero {
             padding: 150px 0 100px;
-            background: linear-gradient(to right bottom, #ffffff, #f8f8ff);
+            background: linear-gradient(rgba(18, 18, 18, 0.85), rgba(18, 18, 18, 0.85)), url('https://images.unsplash.com/photo-1617137968427-85924c800a22?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
             position: relative;
             overflow: hidden;
         }
@@ -168,12 +176,13 @@
             font-size: 3.5rem;
             margin-bottom: 20px;
             line-height: 1.2;
+            color: white;
         }
 
         .hero-text p {
             font-size: 1.2rem;
             margin-bottom: 30px;
-            color: var(--text-light);
+            color: rgba(255, 255, 255, 0.8);
         }
 
         .hero-image {
@@ -183,37 +192,13 @@
 
         .hero-image img {
             width: 100%;
-            border-radius: 20px;
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+            border-radius: 8px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
             transition: var(--transition);
         }
 
         .hero-image:hover img {
             transform: translateY(-10px);
-        }
-
-        .circle {
-            position: absolute;
-            border-radius: 50%;
-            z-index: -1;
-        }
-
-        .circle-1 {
-            width: 400px;
-            height: 400px;
-            background: linear-gradient(45deg, var(--primary), var(--accent));
-            top: -150px;
-            right: -150px;
-            opacity: 0.1;
-        }
-
-        .circle-2 {
-            width: 300px;
-            height: 300px;
-            background: linear-gradient(45deg, var(--secondary), #2575fc);
-            bottom: -100px;
-            left: -100px;
-            opacity: 0.1;
         }
 
         /* Products Section */
@@ -242,7 +227,7 @@
             transform: translateX(-50%);
             width: 80px;
             height: 3px;
-            background: linear-gradient(45deg, var(--primary), var(--accent));
+            background: linear-gradient(45deg, var(--primary), #3a8ccc);
         }
 
         .products-grid {
@@ -253,10 +238,11 @@
 
         .product-card {
             background: white;
-            border-radius: 15px;
+            border-radius: 8px;
             overflow: hidden;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
             transition: var(--transition);
+            border: 1px solid #eee;
         }
 
         .product-card:hover {
@@ -328,10 +314,11 @@
         .feature-box {
             background: white;
             padding: 30px;
-            border-radius: 15px;
+            border-radius: 8px;
             text-align: center;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
             transition: var(--transition);
+            border: 1px solid #eee;
         }
 
         .feature-box:hover {
@@ -342,8 +329,8 @@
         .feature-icon {
             width: 80px;
             height: 80px;
-            background: linear-gradient(45deg, var(--primary), var(--accent));
-            border-radius: 50%;
+            background: linear-gradient(45deg, var(--primary), #3a8ccc);
+            border-radius: 8px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -375,12 +362,13 @@
             width: 120px;
             height: 70px;
             background: white;
-            border-radius: 10px;
+            border-radius: 8px;
             display: flex;
             align-items: center;
             justify-content: center;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
             transition: var(--transition);
+            border: 1px solid #eee;
         }
 
         .payment-method:hover {
@@ -395,7 +383,7 @@
         /* Testimonials */
         .testimonials {
             padding: 100px 0;
-            background: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+            background: linear-gradient(to right, #2a6b9c 0%, #3a8ccc 100%);
             color: white;
             text-align: center;
         }
@@ -417,9 +405,10 @@
         .testimonial {
             background: rgba(255, 255, 255, 0.1);
             padding: 30px;
-            border-radius: 15px;
+            border-radius: 8px;
             margin: 20px;
             backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
         }
 
         .testimonial-content {
@@ -440,6 +429,7 @@
             border-radius: 50%;
             overflow: hidden;
             margin-right: 15px;
+            border: 2px solid white;
         }
 
         .author-image img {
@@ -461,7 +451,7 @@
         .cta {
             padding: 100px 0;
             text-align: center;
-            background: linear-gradient(rgba(26, 26, 46, 0.9), rgba(26, 26, 46, 0.9)), url('https://images.unsplash.com/photo-1490481651871-ab68de25d43d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+            background: linear-gradient(rgba(26, 26, 26, 0.9), rgba(26, 26, 26, 0.9)), url('https://images.unsplash.com/photo-1617137968427-85924c800a22?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80');
             background-size: cover;
             background-position: center;
             color: white;
@@ -509,7 +499,7 @@
             left: 0;
             width: 50px;
             height: 2px;
-            background: var(--primary);
+            background: var(--accent);
         }
 
         .footer-column p {
@@ -532,7 +522,7 @@
         }
 
         .footer-links a:hover {
-            color: var(--primary);
+            color: var(--accent);
             padding-left: 5px;
         }
 
@@ -545,7 +535,7 @@
             width: 40px;
             height: 40px;
             background: rgba(255, 255, 255, 0.1);
-            border-radius: 50%;
+            border-radius: 4px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -648,7 +638,7 @@
     <header>
         <div class="container">
             <nav class="navbar">
-                <a href="#" class="logo">Femme<span>Style</span> Digital</a>
+                <a href="#" class="logo">Style<span>Mann</span> Digital</a>
                 <ul class="nav-links">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Products</a></li>
@@ -667,18 +657,16 @@
 
     <!-- Hero Section -->
     <section class="hero">
-        <div class="circle circle-1"></div>
-        <div class="circle circle-2"></div>
         <div class="container">
             <div class="hero-content">
                 <div class="hero-text animate-on-scroll">
-                    <h1>Elevate Your Digital Fashion Experience</h1>
-                    <p>Discover exclusive digital fashion assets, templates, and resources designed for modern women. Transform your style with our premium digital collections.</p>
+                    <h1>Elevate Your Men's Fashion Digital Experience</h1>
+                    <p>Discover exclusive digital fashion assets, templates, and resources designed for the modern man. Transform your style with our premium digital collections.</p>
                     <a href="#" class="btn pulse">Explore Collections</a>
                     <a href="#" class="btn btn-outline">View Trends</a>
                 </div>
                 <div class="hero-image animate-on-scroll">
-                    <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Fashion Digital Products">
+                    <img src="https://images.unsplash.com/photo-1617137968427-85924c800a22?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Men's Fashion Digital Products">
                 </div>
             </div>
         </div>
@@ -689,17 +677,17 @@
         <div class="container">
             <div class="section-title animate-on-scroll">
                 <h2>Our Digital Products</h2>
-                <p>Premium digital fashion resources for creators and enthusiasts</p>
+                <p>Premium digital fashion resources for modern men</p>
             </div>
             <div class="products-grid">
                 <div class="product-card animate-on-scroll">
                     <div class="product-image">
-                        <img src="https://images.unsplash.com/photo-1617137968427-85924c800a22?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Fashion Templates">
+                        <img src="https://images.unsplash.com/photo-1617137968427-85924c800a22?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Men's Fashion Templates">
                     </div>
                     <div class="product-info">
-                        <h3>Pro Fashion Templates</h3>
-                        <div class="price">$29.99</div>
-                        <p>Premium templates for social media, presentations, and branding with fashion focus.</p>
+                        <h3>Pro Men's Fashion Templates</h3>
+                        <div class="price">$34.99</div>
+                        <p>Premium templates for social media, presentations, and branding with a masculine focus.</p>
                         <div class="product-meta">
                             <div class="rating">
                                 <i class="fas fa-star"></i>
@@ -707,7 +695,7 @@
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star-half-alt"></i>
-                                <span>(128)</span>
+                                <span>(142)</span>
                             </div>
                             <a href="#" class="btn">Add to Cart</a>
                         </div>
@@ -716,12 +704,12 @@
                 
                 <div class="product-card animate-on-scroll">
                     <div class="product-image">
-                        <img src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Digital Assets">
+                        <img src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Digital Assets">
                     </div>
                     <div class="product-info">
-                        <h3>Digital Asset Bundle</h3>
-                        <div class="price">$49.99</div>
-                        <p>Complete collection of fashion patterns, textures, and elements for designers.</p>
+                        <h3>Men's Style Asset Bundle</h3>
+                        <div class="price">$54.99</div>
+                        <p>Complete collection of masculine patterns, textures, and elements for designers.</p>
                         <div class="product-meta">
                             <div class="rating">
                                 <i class="fas fa-star"></i>
@@ -729,7 +717,7 @@
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
-                                <span>(94)</span>
+                                <span>(98)</span>
                             </div>
                             <a href="#" class="btn">Add to Cart</a>
                         </div>
@@ -738,12 +726,12 @@
                 
                 <div class="product-card animate-on-scroll">
                     <div class="product-image">
-                        <img src="https://images.unsplash.com/photo-1576566588028-4147f3842f27?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Style Guide">
+                        <img src="https://images.unsplash.com/photo-1576566588028-4147f3842f27?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Style Guide">
                     </div>
                     <div class="product-info">
-                        <h3>Seasonal Style Guide</h3>
-                        <div class="price">$19.99</div>
-                        <p>Comprehensive digital guide to current trends, styling tips, and color palettes.</p>
+                        <h3>Men's Seasonal Style Guide</h3>
+                        <div class="price">$24.99</div>
+                        <p>Comprehensive digital guide to current men's trends, styling tips, and color palettes.</p>
                         <div class="product-meta">
                             <div class="rating">
                                 <i class="fas fa-star"></i>
@@ -751,7 +739,7 @@
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="far fa-star"></i>
-                                <span>(76)</span>
+                                <span>(87)</span>
                             </div>
                             <a href="#" class="btn">Add to Cart</a>
                         </div>
@@ -844,30 +832,30 @@
             <div class="testimonial-container">
                 <div class="testimonial animate-on-scroll">
                     <div class="testimonial-content">
-                        "The fashion templates have completely transformed my Instagram presence. As a content creator, these have saved me countless hours of design work!"
+                        "The men's fashion templates have completely transformed my brand's online presence. As a content creator, these have saved me countless hours of design work!"
                     </div>
                     <div class="testimonial-author">
                         <div class="author-image">
-                            <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Sarah Johnson">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="James Wilson">
                         </div>
                         <div class="author-info">
-                            <h4>Sarah Johnson</h4>
-                            <p>Fashion Influencer, UK</p>
+                            <h4>James Wilson</h4>
+                            <p>Fashion Influencer, USA</p>
                         </div>
                     </div>
                 </div>
                 
                 <div class="testimonial animate-on-scroll">
                     <div class="testimonial-content">
-                        "I run a small boutique and the digital assets bundle has been invaluable for creating marketing materials. The quality is exceptional!"
+                        "I run a men's boutique and the digital assets bundle has been invaluable for creating marketing materials. The quality is exceptional and very masculine!"
                     </div>
                     <div class="testimonial-author">
                         <div class="author-image">
-                            <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Maria Rodriguez">
+                            <img src="https://randomuser.me/api/portraits/men/68.jpg" alt="Thomas Müller">
                         </div>
                         <div class="author-info">
-                            <h4>Maria Rodriguez</h4>
-                            <p>Boutique Owner, Spain</p>
+                            <h4>Thomas Müller</h4>
+                            <p>Boutique Owner, Germany</p>
                         </div>
                     </div>
                 </div>
@@ -878,12 +866,12 @@
     <!-- CTA Section -->
     <section class="cta">
         <div class="container">
-            <h2 class="animate-on-scroll">Join Our Fashion Community</h2>
+            <h2 class="animate-on-scroll">Join Our Men's Fashion Community</h2>
             <p class="animate-on-scroll">Subscribe to get exclusive digital fashion resources, trend reports, and special discounts delivered to your inbox.</p>
             <form style="max-width: 500px; margin: 0 auto;">
                 <div style="display: flex; margin-top: 30px;">
-                    <input type="email" placeholder="Your email address" style="flex: 1; padding: 15px 20px; border: none; border-radius: 30px 0 0 30px; font-size: 16px;">
-                    <button type="submit" class="btn" style="border-radius: 0 30px 30px 0;">Subscribe</button>
+                    <input type="email" placeholder="Your email address" style="flex: 1; padding: 15px 20px; border: none; border-radius: 4px 0 0 4px; font-size: 16px;">
+                    <button type="submit" class="btn" style="border-radius: 0 4px 4px 0;">Subscribe</button>
                 </div>
             </form>
         </div>
@@ -894,14 +882,14 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-column">
-                    <h3>FemmeStyle Digital</h3>
-                    <p>Premium digital fashion products for the modern woman. Created by designers, for designers and fashion enthusiasts worldwide.</p>
+                    <h3>StyleMann Digital</h3>
+                    <p>Premium digital fashion products for the modern man. Created by designers, for designers and fashion enthusiasts worldwide.</p>
                     <div class="social-icons">
                         <a href="#"><i class="fab fa-facebook-f"></i></a>
                         <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
                         <a href="#"><i class="fab fa-youtube"></i></a>
-                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
                 
@@ -931,14 +919,14 @@
                 
                 <div class="footer-column">
                     <h3>Contact Info</h3>
-                    <p><i class="fas fa-map-marker-alt"></i> 123 Fashion Ave, New York, NY</p>
-                    <p><i class="fas fa-envelope"></i> support@femmestyledigital.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> 456 Fashion Ave, New York, NY</p>
+                    <p><i class="fas fa-envelope"></i> support@stylemanndigital.com</p>
                     <p><i class="fas fa-phone"></i> +1 (800) 123-4567</p>
                 </div>
             </div>
             
             <div class="copyright">
-                <p>&copy; 2023 FemmeStyle Digital. All rights reserved. Designed for international customers.</p>
+                <p>&copy; 2023 StyleMann Digital. All rights reserved. Designed for international customers.</p>
             </div>
         </div>
     </footer>
