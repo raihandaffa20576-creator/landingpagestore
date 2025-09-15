@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>StyleMann Digital | Premium Men's Fashion Digital Products</title>
+    <title>Industrial Solutions | Spesialis Peralatan Pabrik</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -14,26 +14,26 @@
         }
 
         :root {
-            --primary: #2a6b9c;
-            --secondary: #121212;
-            --accent: #d4af37;
-            --dark: #1a1a1a;
-            --light: #f5f5f5;
+            --primary: #2c3e50;
+            --secondary: #e74c3c;
+            --accent: #3498db;
+            --dark: #2c3e50;
+            --light: #ecf0f1;
             --text: #333;
-            --text-light: #777;
+            --text-light: #7f8c8d;
             --transition: all 0.3s ease;
         }
 
         body {
-            font-family: 'Montserrat', sans-serif;
+            font-family: 'Roboto', sans-serif;
             color: var(--text);
             line-height: 1.6;
-            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            background-color: #f9f9f9;
             overflow-x: hidden;
         }
 
         h1, h2, h3, h4 {
-            font-family: 'Raleway', sans-serif;
+            font-family: 'Montserrat', sans-serif;
             font-weight: 700;
             margin-bottom: 1rem;
             color: var(--dark);
@@ -49,7 +49,7 @@
         .btn {
             display: inline-block;
             padding: 12px 28px;
-            background: linear-gradient(45deg, var(--primary), #3a8ccc);
+            background: var(--secondary);
             color: white;
             border: none;
             border-radius: 4px;
@@ -60,30 +60,30 @@
             cursor: pointer;
             transition: var(--transition);
             text-decoration: none;
-            box-shadow: 0 4px 15px rgba(42, 107, 156, 0.3);
+            box-shadow: 0 4px 15px rgba(231, 76, 60, 0.3);
         }
 
         .btn:hover {
             transform: translateY(-3px);
-            box-shadow: 0 6px 20px rgba(42, 107, 156, 0.4);
-            background: linear-gradient(45deg, #3a8ccc, var(--primary));
+            box-shadow: 0 6px 20px rgba(231, 76, 60, 0.4);
+            background: #c0392b;
         }
 
         .btn-outline {
             background: transparent;
-            border: 2px solid var(--primary);
-            color: var(--primary);
+            border: 2px solid var(--secondary);
+            color: var(--secondary);
             box-shadow: none;
         }
 
         .btn-outline:hover {
-            background: linear-gradient(45deg, var(--primary), #3a8ccc);
+            background: var(--secondary);
             color: white;
         }
 
         /* Header Styles */
         header {
-            background-color: var(--dark);
+            background-color: var(--primary);
             box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
             position: fixed;
             width: 100%;
@@ -99,15 +99,22 @@
         }
 
         .logo {
-            font-family: 'Raleway', sans-serif;
+            font-family: 'Montserrat', sans-serif;
             font-size: 28px;
             font-weight: 700;
             color: white;
             text-decoration: none;
+            display: flex;
+            align-items: center;
         }
 
         .logo span {
-            color: var(--accent);
+            color: var(--secondary);
+        }
+
+        .logo i {
+            margin-right: 10px;
+            font-size: 32px;
         }
 
         .nav-links {
@@ -130,7 +137,7 @@
         }
 
         .nav-links a:hover {
-            color: var(--accent);
+            color: var(--secondary);
         }
 
         .icons {
@@ -147,13 +154,13 @@
         }
 
         .icons i:hover {
-            color: var(--accent);
+            color: var(--secondary);
         }
 
         /* Hero Section */
         .hero {
             padding: 150px 0 100px;
-            background: linear-gradient(rgba(18, 18, 18, 0.85), rgba(18, 18, 18, 0.85)), url('https://images.unsplash.com/photo-1617137968427-85924c800a22?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80');
+            background: linear-gradient(rgba(44, 62, 80, 0.85), rgba(44, 62, 80, 0.85)), url('https://images.unsplash.com/photo-1596461404969-9ae70f2830c1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80');
             background-size: cover;
             background-position: center;
             color: white;
@@ -182,7 +189,7 @@
         .hero-text p {
             font-size: 1.2rem;
             margin-bottom: 30px;
-            color: rgba(255, 255, 255, 0.8);
+            color: rgba(255, 255, 255, 0.9);
         }
 
         .hero-image {
@@ -227,7 +234,7 @@
             transform: translateX(-50%);
             width: 80px;
             height: 3px;
-            background: linear-gradient(45deg, var(--primary), #3a8ccc);
+            background: var(--secondary);
         }
 
         .products-grid {
@@ -243,6 +250,7 @@
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
             transition: var(--transition);
             border: 1px solid #eee;
+            text-align: center;
         }
 
         .product-card:hover {
@@ -251,19 +259,14 @@
         }
 
         .product-image {
-            height: 250px;
+            height: 200px;
             overflow: hidden;
-        }
-
-        .product-image img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: var(--transition);
-        }
-
-        .product-card:hover .product-image img {
-            transform: scale(1.1);
+            background: var(--light);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 50px;
+            color: var(--primary);
         }
 
         .product-info {
@@ -278,7 +281,7 @@
         .product-info .price {
             font-size: 1.3rem;
             font-weight: 700;
-            color: var(--primary);
+            color: var(--secondary);
             margin: 10px 0;
         }
 
@@ -293,10 +296,6 @@
             justify-content: space-between;
             align-items: center;
             margin-top: 15px;
-        }
-
-        .rating {
-            color: #ffc107;
         }
 
         /* Features */
@@ -329,7 +328,7 @@
         .feature-icon {
             width: 80px;
             height: 80px;
-            background: linear-gradient(45deg, var(--primary), #3a8ccc);
+            background: var(--primary);
             border-radius: 8px;
             display: flex;
             align-items: center;
@@ -344,46 +343,36 @@
             margin-bottom: 15px;
         }
 
-        /* Payment Section */
-        .payment {
-            padding: 80px 0;
+        /* About Section */
+        .about {
+            padding: 100px 0;
             background-color: white;
         }
 
-        .payment-methods {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 25px;
-            margin-top: 40px;
-        }
-
-        .payment-method {
-            width: 120px;
-            height: 70px;
-            background: white;
-            border-radius: 8px;
+        .about-content {
             display: flex;
             align-items: center;
-            justify-content: center;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
-            transition: var(--transition);
-            border: 1px solid #eee;
+            gap: 50px;
         }
 
-        .payment-method:hover {
-            transform: translateY(-5px);
+        .about-text {
+            flex: 1;
         }
 
-        .payment-method img {
-            max-width: 80%;
-            max-height: 80%;
+        .about-image {
+            flex: 1;
+        }
+
+        .about-image img {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
         }
 
         /* Testimonials */
         .testimonials {
             padding: 100px 0;
-            background: linear-gradient(to right, #2a6b9c 0%, #3a8ccc 100%);
+            background: linear-gradient(to right, #2c3e50 0%, #3498db 100%);
             color: white;
             text-align: center;
         }
@@ -451,7 +440,7 @@
         .cta {
             padding: 100px 0;
             text-align: center;
-            background: linear-gradient(rgba(26, 26, 26, 0.9), rgba(26, 26, 26, 0.9)), url('https://images.unsplash.com/photo-1617137968427-85924c800a22?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80');
+            background: linear-gradient(rgba(44, 62, 80, 0.9), rgba(44, 62, 80, 0.9)), url('https://images.unsplash.com/photo-1581091226033-d5c48150dbaa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80');
             background-size: cover;
             background-position: center;
             color: white;
@@ -499,7 +488,7 @@
             left: 0;
             width: 50px;
             height: 2px;
-            background: var(--accent);
+            background: var(--secondary);
         }
 
         .footer-column p {
@@ -522,7 +511,7 @@
         }
 
         .footer-links a:hover {
-            color: var(--accent);
+            color: var(--secondary);
             padding-left: 5px;
         }
 
@@ -544,7 +533,7 @@
         }
 
         .social-icons a:hover {
-            background: var(--primary);
+            background: var(--secondary);
             transform: translateY(-5px);
         }
 
@@ -570,6 +559,10 @@
             
             .hero-text h1 {
                 font-size: 2.8rem;
+            }
+            
+            .about-content {
+                flex-direction: column;
             }
             
             .nav-links {
@@ -638,18 +631,18 @@
     <header>
         <div class="container">
             <nav class="navbar">
-                <a href="#" class="logo">Style<span>Mann</span> Digital</a>
+                <a href="#" class="logo"><i class="fas fa-industry"></i>Industrial<span>Solutions</span></a>
                 <ul class="nav-links">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Products</a></li>
-                    <li><a href="#">Collections</a></li>
-                    <li><a href="#">Trends</a></li>
-                    <li><a href="#">About</a></li>
+                    <li><a href="#">Beranda</a></li>
+                    <li><a href="#">Produk</a></li>
+                    <li><a href="#">Layanan</a></li>
+                    <li><a href="#">Tentang Kami</a></li>
+                    <li><a href="#">Kontak</a></li>
                 </ul>
                 <div class="icons">
                     <i class="fas fa-search"></i>
-                    <i class="fas fa-shopping-cart"></i>
-                    <i class="fas fa-user"></i>
+                    <i class="fas fa-phone"></i>
+                    <i class="fas fa-bars"></i>
                 </div>
             </nav>
         </div>
@@ -660,13 +653,13 @@
         <div class="container">
             <div class="hero-content">
                 <div class="hero-text animate-on-scroll">
-                    <h1>Elevate Your Men's Fashion Digital Experience</h1>
-                    <p>Discover exclusive digital fashion assets, templates, and resources designed for the modern man. Transform your style with our premium digital collections.</p>
-                    <a href="#" class="btn pulse">Explore Collections</a>
-                    <a href="#" class="btn btn-outline">View Trends</a>
+                    <h1>Solusi Industri Terdepan untuk Pabrik Modern</h1>
+                    <p>Kami menyediakan peralatan industri berkualitas tinggi dan teknologi mutakhir untuk meningkatkan efisiensi dan produktivitas pabrik Anda.</p>
+                    <a href="#" class="btn pulse">Konsultasi Gratis</a>
+                    <a href="#" class="btn btn-outline">Lihat Produk</a>
                 </div>
                 <div class="hero-image animate-on-scroll">
-                    <img src="https://images.unsplash.com/photo-1617137968427-85924c800a22?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Men's Fashion Digital Products">
+                    <img src="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80" alt="Solusi Industri">
                 </div>
             </div>
         </div>
@@ -676,72 +669,48 @@
     <section class="products">
         <div class="container">
             <div class="section-title animate-on-scroll">
-                <h2>Our Digital Products</h2>
-                <p>Premium digital fashion resources for modern men</p>
+                <h2>Produk Kami</h2>
+                <p>Berbagai peralatan industri berkualitas tinggi untuk kebutuhan pabrik Anda</p>
             </div>
             <div class="products-grid">
                 <div class="product-card animate-on-scroll">
                     <div class="product-image">
-                        <img src="https://images.unsplash.com/photo-1617137968427-85924c800a22?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Men's Fashion Templates">
+                        <i class="fas fa-cogs"></i>
                     </div>
                     <div class="product-info">
-                        <h3>Pro Men's Fashion Templates</h3>
-                        <div class="price">$34.99</div>
-                        <p>Premium templates for social media, presentations, and branding with a masculine focus.</p>
+                        <h3>Mesin Produksi</h3>
+                        <div class="price">Rp 250jt - 1.5M</div>
+                        <p>Mesin produksi otomatis dengan teknologi terkini untuk meningkatkan efisiensi dan output pabrik Anda.</p>
                         <div class="product-meta">
-                            <div class="rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star-half-alt"></i>
-                                <span>(142)</span>
-                            </div>
-                            <a href="#" class="btn">Add to Cart</a>
+                            <a href="#" class="btn">Detail</a>
                         </div>
                     </div>
                 </div>
                 
                 <div class="product-card animate-on-scroll">
                     <div class="product-image">
-                        <img src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Digital Assets">
+                        <i class="fas fa-conveyor-belt"></i>
                     </div>
                     <div class="product-info">
-                        <h3>Men's Style Asset Bundle</h3>
-                        <div class="price">$54.99</div>
-                        <p>Complete collection of masculine patterns, textures, and elements for designers.</p>
+                        <h3>Sistem Konveyor</h3>
+                        <div class="price">Rp 150jt - 800jt</div>
+                        <p>Sistem konveyor canggih untuk optimasi alur material dan produk dalam proses produksi.</p>
                         <div class="product-meta">
-                            <div class="rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <span>(98)</span>
-                            </div>
-                            <a href="#" class="btn">Add to Cart</a>
+                            <a href="#" class="btn">Detail</a>
                         </div>
                     </div>
                 </div>
                 
                 <div class="product-card animate-on-scroll">
                     <div class="product-image">
-                        <img src="https://images.unsplash.com/photo-1576566588028-4147f3842f27?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Style Guide">
+                        <i class="fas fa-robot"></i>
                     </div>
                     <div class="product-info">
-                        <h3>Men's Seasonal Style Guide</h3>
-                        <div class="price">$24.99</div>
-                        <p>Comprehensive digital guide to current men's trends, styling tips, and color palettes.</p>
+                        <h3>Automation System</h3>
+                        <div class="price">Rp 500jt - 2.5M</div>
+                        <p>Sistem otomasi industri terintegrasi untuk mengoptimalkan seluruh proses manufaktur.</p>
                         <div class="product-meta">
-                            <div class="rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="far fa-star"></i>
-                                <span>(87)</span>
-                            </div>
-                            <a href="#" class="btn">Add to Cart</a>
+                            <a href="#" class="btn">Detail</a>
                         </div>
                     </div>
                 </div>
@@ -753,70 +722,57 @@
     <section class="features">
         <div class="container">
             <div class="section-title animate-on-scroll">
-                <h2>Why Choose Us</h2>
-                <p>Premium benefits for our international customers</p>
+                <h2>Keunggulan Kami</h2>
+                <p>Mengapa memilih solusi industri dari kami</p>
             </div>
             <div class="features-container">
                 <div class="feature-box animate-on-scroll">
                     <div class="feature-icon">
-                        <i class="fas fa-globe"></i>
+                        <i class="fas fa-tools"></i>
                     </div>
-                    <h3>Global Delivery</h3>
-                    <p>Instant digital delivery worldwide. Access your purchases immediately after payment.</p>
-                </div>
-                
-                <div class="feature-box animate-on-scroll">
-                    <div class="feature-icon">
-                        <i class="fas fa-file-download"></i>
-                    </div>
-                    <h3>Unlimited Downloads</h3>
-                    <p>Download your digital products as many times as you need, forever.</p>
-                </div>
-                
-                <div class="feature-box animate-on-scroll">
-                    <div class="feature-icon">
-                        <i class="fas fa-sync-alt"></i>
-                    </div>
-                    <h3>Regular Updates</h3>
-                    <p>Products are regularly updated with new content and improvements.</p>
+                    <h3>Kualitas Terjamin</h3>
+                    <p>Semua produk kami melalui proses quality control ketat untuk memastikan keandalan dan daya tahan.</p>
                 </div>
                 
                 <div class="feature-box animate-on-scroll">
                     <div class="feature-icon">
                         <i class="fas fa-headset"></i>
                     </div>
-                    <h3>24/7 Support</h3>
-                    <p>Our dedicated support team is always ready to assist you anytime.</p>
+                    <h3>Dukungan Teknis 24/7</h3>
+                    <p>Tim teknis kami siap membantu Anda kapan saja, termasuk layanan darurat untuk perbaikan.</p>
+                </div>
+                
+                <div class="feature-box animate-on-scroll">
+                    <div class="feature-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>Custom Solution</h3>
+                    <p>Kami menyediakan solusi khusus sesuai dengan kebutuhan dan proses produksi pabrik Anda.</p>
+                </div>
+                
+                <div class="feature-box animate-on-scroll">
+                    <div class="feature-icon">
+                        <i class="fas fa-shipping-fast"></i>
+                    </div>
+                    <h3>Pengiriman Tepat Waktu</h3>
+                    <p>Kami mengutamakan ketepatan waktu pengiriman untuk meminimalkan downtime pabrik Anda.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Payment Methods -->
-    <section class="payment">
+    <!-- About Section -->
+    <section class="about">
         <div class="container">
-            <div class="section-title animate-on-scroll">
-                <h2>Secure Payment Methods</h2>
-                <p>We accept all major international payment options</p>
-            </div>
-            <div class="payment-methods">
-                <div class="payment-method animate-on-scroll">
-                    <i class="fab fa-cc-visa fa-3x"></i>
+            <div class="about-content">
+                <div class="about-text animate-on-scroll">
+                    <h2>Tentang Perusahaan Kami</h2>
+                    <p>Industrial Solutions telah menjadi pemimpin dalam penyediaan peralatan dan solusi industri selama lebih dari 25 tahun. Kami mengkhususkan diri dalam menyediakan teknologi mutakhir untuk berbagai sektor industri.</p>
+                    <p>Dengan tim engineer berpengalaman dan jaringan distribusi yang luas, kami mampu memberikan solusi terbaik untuk meningkatkan efisiensi dan produktivitas pabrik Anda.</p>
+                    <a href="#" class="btn">Selengkapnya</a>
                 </div>
-                <div class="payment-method animate-on-scroll">
-                    <i class="fab fa-cc-mastercard fa-3x"></i>
-                </div>
-                <div class="payment-method animate-on-scroll">
-                    <i class="fab fa-cc-amex fa-3x"></i>
-                </div>
-                <div class="payment-method animate-on-scroll">
-                    <i class="fab fa-cc-paypal fa-3x"></i>
-                </div>
-                <div class="payment-method animate-on-scroll">
-                    <i class="fab fa-apple-pay fa-3x"></i>
-                </div>
-                <div class="payment-method animate-on-scroll">
-                    <i class="fab fa-google-pay fa-3x"></i>
+                <div class="about-image animate-on-scroll">
+                    <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80" alt="Tentang Kami">
                 </div>
             </div>
         </div>
@@ -826,36 +782,36 @@
     <section class="testimonials">
         <div class="container">
             <div class="section-title animate-on-scroll">
-                <h2>Customer Reviews</h2>
-                <p>What our international customers say</p>
+                <h2>Testimonial Klien</h2>
+                <p>Apa kata pelanggan tentang layanan kami</p>
             </div>
             <div class="testimonial-container">
                 <div class="testimonial animate-on-scroll">
                     <div class="testimonial-content">
-                        "The men's fashion templates have completely transformed my brand's online presence. As a content creator, these have saved me countless hours of design work!"
+                        "Sejak menggunakan mesin produksi dari Industrial Solutions, kapasitas produksi kami meningkat 45% dengan kualitas yang lebih konsisten. Layanan purna jualnya juga sangat responsif."
                     </div>
                     <div class="testimonial-author">
                         <div class="author-image">
-                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="James Wilson">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Budi Santoso">
                         </div>
                         <div class="author-info">
-                            <h4>James Wilson</h4>
-                            <p>Fashion Influencer, USA</p>
+                            <h4>Budi Santoso</h4>
+                            <p>Direktur PT. Maju Jaya Industri</p>
                         </div>
                     </div>
                 </div>
                 
                 <div class="testimonial animate-on-scroll">
                     <div class="testimonial-content">
-                        "I run a men's boutique and the digital assets bundle has been invaluable for creating marketing materials. The quality is exceptional and very masculine!"
+                        "Sistem otomasi yang mereka pasang benar-benar mengubah cara kami beroperasi. Downtime berkurang drastis dan efisiensi energi meningkat signifikan."
                     </div>
                     <div class="testimonial-author">
                         <div class="author-image">
-                            <img src="https://randomuser.me/api/portraits/men/68.jpg" alt="Thomas Müller">
+                            <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Dewi Wijaya">
                         </div>
                         <div class="author-info">
-                            <h4>Thomas Müller</h4>
-                            <p>Boutique Owner, Germany</p>
+                            <h4>Dewi Wijaya</h4>
+                            <p>Manajer Operasional PT. Sinar Abadi</p>
                         </div>
                     </div>
                 </div>
@@ -866,12 +822,12 @@
     <!-- CTA Section -->
     <section class="cta">
         <div class="container">
-            <h2 class="animate-on-scroll">Join Our Men's Fashion Community</h2>
-            <p class="animate-on-scroll">Subscribe to get exclusive digital fashion resources, trend reports, and special discounts delivered to your inbox.</p>
+            <h2 class="animate-on-scroll">Siap Meningkatkan Efisiensi Pabrik Anda?</h2>
+            <p class="animate-on-scroll">Konsultasikan kebutuhan industri Anda dengan ahli kami dan dapatkan solusi terbaik untuk operasional pabrik yang lebih efisien dan produktif.</p>
             <form style="max-width: 500px; margin: 0 auto;">
                 <div style="display: flex; margin-top: 30px;">
-                    <input type="email" placeholder="Your email address" style="flex: 1; padding: 15px 20px; border: none; border-radius: 4px 0 0 4px; font-size: 16px;">
-                    <button type="submit" class="btn" style="border-radius: 0 4px 4px 0;">Subscribe</button>
+                    <input type="email" placeholder="Email perusahaan Anda" style="flex: 1; padding: 15px 20px; border: none; border-radius: 4px 0 0 4px; font-size: 16px;">
+                    <button type="submit" class="btn" style="border-radius: 0 4px 4px 0;">Hubungi Kami</button>
                 </div>
             </form>
         </div>
@@ -882,51 +838,52 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-column">
-                    <h3>StyleMann Digital</h3>
-                    <p>Premium digital fashion products for the modern man. Created by designers, for designers and fashion enthusiasts worldwide.</p>
+                    <h3>Industrial Solutions</h3>
+                    <p>Penyedia solusi peralatan industri terkemuka dengan pengalaman lebih dari 25 tahun melayani berbagai sektor industri.</p>
                     <div class="social-icons">
                         <a href="#"><i class="fab fa-facebook-f"></i></a>
                         <a href="#"><i class="fab fa-instagram"></i></a>
                         <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-youtube"></i></a>
                         <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
                     </div>
                 </div>
                 
                 <div class="footer-column">
-                    <h3>Quick Links</h3>
+                    <h3>Produk Kami</h3>
                     <ul class="footer-links">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">All Products</a></li>
-                        <li><a href="#">Trend Collections</a></li>
-                        <li><a href="#">Best Sellers</a></li>
-                        <li><a href="#">New Arrivals</a></li>
-                        <li><a href="#">Special Offers</a></li>
+                        <li><a href="#">Mesin Produksi</a></li>
+                        <li><a href="#">Sistem Konveyor</a></li>
+                        <li><a href="#">Automation System</a></li>
+                        <li><a href="#">Peralatan Pengemasan</a></li>
+                        <li><a href="#">Sistem Kontrol Kualitas</a></li>
+                        <li><a href="#">Peralatan Laboratorium</a></li>
                     </ul>
                 </div>
                 
                 <div class="footer-column">
-                    <h3>Support</h3>
+                    <h3>Layanan</h3>
                     <ul class="footer-links">
-                        <li><a href="#">Contact Us</a></li>
-                        <li><a href="#">FAQs</a></li>
-                        <li><a href="#">Download Help</a></li>
-                        <li><a href="#">Refund Policy</a></li>
-                        <li><a href="#">Terms of Service</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Konsultasi Industri</a></li>
+                        <li><a href="#">Instalasi & Komisioning</a></li>
+                        <li><a href="#">Maintenance & Perawatan</a></li>
+                        <li><a href="#">Pelatihan Operator</a></li>
+                        <li><a href="#">Suku Cadang</a></li>
+                        <li><a href="#">Upgrade Teknologi</a></li>
                     </ul>
                 </div>
                 
                 <div class="footer-column">
-                    <h3>Contact Info</h3>
-                    <p><i class="fas fa-map-marker-alt"></i> 456 Fashion Ave, New York, NY</p>
-                    <p><i class="fas fa-envelope"></i> support@stylemanndigital.com</p>
-                    <p><i class="fas fa-phone"></i> +1 (800) 123-4567</p>
+                    <h3>Kontak Kami</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Jl. Industri Raya No. 123, Jakarta</p>
+                    <p><i class="fas fa-phone"></i> +62 21 1234 5678</p>
+                    <p><i class="fas fa-envelope"></i> info@industrialsolutions.co.id</p>
+                    <p><i class="fas fa-clock"></i> Senin - Jumat: 08:00 - 17:00</p>
                 </div>
             </div>
             
             <div class="copyright">
-                <p>&copy; 2023 StyleMann Digital. All rights reserved. Designed for international customers.</p>
+                <p>&copy; 2023 Industrial Solutions. All rights reserved.</p>
             </div>
         </div>
     </footer>
@@ -948,21 +905,19 @@
             });
             
             // Add animation delay for staggered effects
-            document.querySelectorAll('.feature-box, .product-card, .payment-method').forEach((el, index) => {
+            document.querySelectorAll('.feature-box, .product-card').forEach((el, index) => {
                 el.style.transitionDelay = `${index * 0.1}s`;
             });
             
-            // Simple cart functionality
-            const cartButtons = document.querySelectorAll('.btn');
-            cartButtons.forEach(button => {
-                if (button.textContent.includes('Add to Cart')) {
-                    button.addEventListener('click', function(e) {
-                        e.preventDefault();
-                        const productName = this.closest('.product-card').querySelector('h3').textContent;
-                        alert(`${productName} added to cart!`);
-                    });
-                }
-            });
+            // Simple form submission
+            const form = document.querySelector('form');
+            if (form) {
+                form.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    alert('Terima kasih! Tim kami akan segera menghubungi Anda.');
+                    form.reset();
+                });
+            }
         });
     </script>
 </body>
